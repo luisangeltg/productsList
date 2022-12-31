@@ -10,9 +10,17 @@
 		9366805A2958F054009D8D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936680592958F054009D8D6E /* AppDelegate.swift */; };
 		9366805C2958F054009D8D6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366805B2958F054009D8D6E /* SceneDelegate.swift */; };
 		9366805E2958F054009D8D6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366805D2958F054009D8D6E /* ViewController.swift */; };
-		936680612958F054009D8D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9366805F2958F054009D8D6E /* Main.storyboard */; };
 		936680632958F056009D8D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936680622958F056009D8D6E /* Assets.xcassets */; };
-		936680662958F056009D8D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936680642958F056009D8D6E /* LaunchScreen.storyboard */; };
+		9366806F2959E610009D8D6E /* DisplayTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366806E2959E610009D8D6E /* DisplayTable.swift */; };
+		936680732959EE61009D8D6E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936680722959EE61009D8D6E /* Item.swift */; };
+		936680752959F6AF009D8D6E /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936680742959F6AF009D8D6E /* ItemViewModel.swift */; };
+		936680792959FDFB009D8D6E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936680782959FDFB009D8D6E /* CustomCell.swift */; };
+		9366807B295AC928009D8D6E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366807A295AC928009D8D6E /* DetailView.swift */; };
+		9366807D295B2F1F009D8D6E /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366807C295B2F1E009D8D6E /* LabelFactory.swift */; };
+		93668080295DFB07009D8D6E /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366807F295DFB07009D8D6E /* Carousel.swift */; };
+		93668083295E0054009D8D6E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 93668082295E0054009D8D6E /* SDWebImage */; };
+		93668085295E0077009D8D6E /* CarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93668084295E0077009D8D6E /* CarouselLayout.swift */; };
+		9366808729609E2C009D8D6E /* DisplayTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366808629609E2C009D8D6E /* DisplayTableDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +28,17 @@
 		936680592958F054009D8D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9366805B2958F054009D8D6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9366805D2958F054009D8D6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		936680602958F054009D8D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		936680622958F056009D8D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		936680652958F056009D8D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		936680672958F056009D8D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9366806E2959E610009D8D6E /* DisplayTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTable.swift; sourceTree = "<group>"; };
+		936680722959EE61009D8D6E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		936680742959F6AF009D8D6E /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		936680782959FDFB009D8D6E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9366807A295AC928009D8D6E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		9366807C295B2F1E009D8D6E /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		9366807F295DFB07009D8D6E /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		93668084295E0077009D8D6E /* CarouselLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselLayout.swift; sourceTree = "<group>"; };
+		9366808629609E2C009D8D6E /* DisplayTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTableDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93668083295E0054009D8D6E /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,70 @@
 		936680582958F054009D8D6E /* PruebaTecnicaBancoppel */ = {
 			isa = PBXGroup;
 			children = (
+				936680712959EE44009D8D6E /* Model */,
+				936680702959EE34009D8D6E /* ViewModel */,
+				9366806D2959E5F2009D8D6E /* View */,
 				936680592958F054009D8D6E /* AppDelegate.swift */,
 				9366805B2958F054009D8D6E /* SceneDelegate.swift */,
 				9366805D2958F054009D8D6E /* ViewController.swift */,
-				9366805F2958F054009D8D6E /* Main.storyboard */,
 				936680622958F056009D8D6E /* Assets.xcassets */,
-				936680642958F056009D8D6E /* LaunchScreen.storyboard */,
 				936680672958F056009D8D6E /* Info.plist */,
 			);
 			path = PruebaTecnicaBancoppel;
+			sourceTree = "<group>";
+		};
+		9366806D2959E5F2009D8D6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9366807E295DFAD4009D8D6E /* Carousel */,
+				936680772959FDE4009D8D6E /* DetailView */,
+				936680762959FDD4009D8D6E /* TableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		936680702959EE34009D8D6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				936680742959F6AF009D8D6E /* ItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		936680712959EE44009D8D6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				936680722959EE61009D8D6E /* Item.swift */,
+				9366807C295B2F1E009D8D6E /* LabelFactory.swift */,
+				9366808629609E2C009D8D6E /* DisplayTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		936680762959FDD4009D8D6E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9366806E2959E610009D8D6E /* DisplayTable.swift */,
+				936680782959FDFB009D8D6E /* CustomCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		936680772959FDE4009D8D6E /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				9366807A295AC928009D8D6E /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		9366807E295DFAD4009D8D6E /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				9366807F295DFB07009D8D6E /* Carousel.swift */,
+				93668084295E0077009D8D6E /* CarouselLayout.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,9 @@
 			dependencies = (
 			);
 			name = PruebaTecnicaBancoppel;
+			packageProductDependencies = (
+				93668082295E0054009D8D6E /* SDWebImage */,
+			);
 			productName = PruebaTecnicaBancoppel;
 			productReference = 936680562958F054009D8D6E /* PruebaTecnicaBancoppel.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 9366804D2958F054009D8D6E;
+			packageReferences = (
+				93668081295E0054009D8D6E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 936680572958F054009D8D6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936680662958F056009D8D6E /* LaunchScreen.storyboard in Resources */,
 				936680632958F056009D8D6E /* Assets.xcassets in Resources */,
-				936680612958F054009D8D6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +213,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936680732959EE61009D8D6E /* Item.swift in Sources */,
+				9366807B295AC928009D8D6E /* DetailView.swift in Sources */,
 				9366805E2958F054009D8D6E /* ViewController.swift in Sources */,
+				93668080295DFB07009D8D6E /* Carousel.swift in Sources */,
+				9366807D295B2F1F009D8D6E /* LabelFactory.swift in Sources */,
+				936680752959F6AF009D8D6E /* ItemViewModel.swift in Sources */,
+				9366808729609E2C009D8D6E /* DisplayTableDelegate.swift in Sources */,
 				9366805A2958F054009D8D6E /* AppDelegate.swift in Sources */,
 				9366805C2958F054009D8D6E /* SceneDelegate.swift in Sources */,
+				936680792959FDFB009D8D6E /* CustomCell.swift in Sources */,
+				93668085295E0077009D8D6E /* CarouselLayout.swift in Sources */,
+				9366806F2959E610009D8D6E /* DisplayTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9366805F2958F054009D8D6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				936680602958F054009D8D6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		936680642958F056009D8D6E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				936680652958F056009D8D6E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		936680682958F056009D8D6E /* Debug */ = {
@@ -292,7 +357,6 @@
 				INFOPLIST_FILE = PruebaTecnicaBancoppel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +384,6 @@
 				INFOPLIST_FILE = PruebaTecnicaBancoppel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +421,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93668081295E0054009D8D6E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93668082295E0054009D8D6E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93668081295E0054009D8D6E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9366804E2958F054009D8D6E /* Project object */;
 }

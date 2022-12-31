@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol DisplayTableDelegate : AnyObject {
+    func reloadTableView();
+}
