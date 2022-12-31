@@ -50,11 +50,11 @@ class ItemViewModel {
         let newItem = Item(products: products, total: item.total, skip: item.skip, limit: item.limit)
         item = newItem
     }
-    func sortProductsByID() -> [Product]{
+    
+    func sortProductsByID(){
         let products = products().sorted(by: { $0.id < $1.id })
         let newItem = Item(products: products, total: item.total, skip: item.skip, limit: item.limit)
         item = newItem
-        return products
     }
     
     func putOnTop(newTopID: Int) {

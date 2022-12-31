@@ -177,12 +177,12 @@ extension DetailView {
         carousel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-//            carousel.topAnchor.constraint(equalTo: stackVerticalItem.topAnchor),
-//            carousel.bottomAnchor.constraint(equalTo: stackVerticalItem.bottomAnchor),
-//            carousel.leadingAnchor.constraint(equalTo: stackVerticalItem.leadingAnchor),
-//            carousel.trailingAnchor.constraint(equalTo: stackVerticalItem.trailingAnchor),
-            carousel.widthAnchor.constraint(equalToConstant: 80),
-            carousel.heightAnchor.constraint(equalToConstant: 300)
+//            carousel.topAnchor.constraint(equalTo: stackLabels4.topAnchor),
+//            carousel.bottomAnchor.constraint(equalTo: stackLabels4.bottomAnchor),
+//            carousel.leadingAnchor.constraint(equalTo: stackLabels4.leadingAnchor),
+//            carousel.trailingAnchor.constraint(equalTo: stackLabels4.trailingAnchor),
+            carousel.widthAnchor.constraint(equalToConstant: 200),
+            carousel.heightAnchor.constraint(equalToConstant: 150)
         ])
     }
 }

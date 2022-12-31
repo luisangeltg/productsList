@@ -54,7 +54,7 @@ extension CustomCell {
         NSLayoutConstraint.activate([
             //Image constraints
             productoImageV.widthAnchor.constraint(equalToConstant: 70),
-            productoImageV.heightAnchor.constraint(equalToConstant: 70),
+//            productoImageV.heightAnchor.constraint(equalToConstant: 70),
             productoImageV.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
 //            productoImageV.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10),
             productoImageV.topAnchor.constraint(equalTo: topAnchor),

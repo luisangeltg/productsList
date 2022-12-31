@@ -22,6 +22,7 @@ class DisplayTable: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.setupView()
+        setupNavbar()
     }
 
     private lazy var tableDisplay: UITableView = {
@@ -34,6 +35,43 @@ class DisplayTable: UIViewController {
 
         return table
     }()
+    
+    func setupNavbar() {
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithDefaultBackground()
+        navigationBarAppearance.backgroundColor = .orange
+
+        navigationItem.standardAppearance = navigationBarAppearance
+        navigationItem.compactAppearance = navigationBarAppearance
+        navigationItem.scrollEdgeAppearance = navigationBarAppearance
+        navigationItem.title = "App Productos"
+        
+        initNavBarButtons()
+    }
+
+    private func initNavBarButtons () {
+        let image = UIImage(systemName: "books.vertical.circle")
+//        guard let selectedID = ItemViewModel.shared.selected?.id else { return }
+        
+//        if selectedID != ItemViewModel.shared.products()[0].id {
+        let rightButton = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(sortItemsById))
+        rightButton.title = "Order By ID"
+        self.navigationItem.rightBarButtonItem = rightButton
+//        }
+    }
+    
+    
+    @objc private func sortItemsById(_ sender : UIButton){
+        ItemViewModel.shared.sortProductsByID()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Sorting by Id ...")
+        tableDisplay.reloadData()
+        self.refreshControl.endRefreshing()
+        
+        tableDisplay.reloadData()
+//        navigationController?.popViewController(animated: true)
+        
+    }
 }
 
 extension DisplayTable: UITableViewDelegate, UITableViewDataSource, DisplayTableDelegate {
@@ -46,7 +84,6 @@ extension DisplayTable: UITableViewDelegate, UITableViewDataSource, DisplayTable
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(tableDisplay)
         view.addSubview(containerView)
-        containerView.backgroundColor = .gray
 
         let marginView = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
@@ -89,11 +126,11 @@ extension DisplayTable: UITableViewDelegate, UITableViewDataSource, DisplayTable
             tableDisplay.addSubview(refreshControl)
         }
         refreshControl.addTarget(self, action: #selector(sortItemsByTitle), for: .valueChanged)
-        refreshControl.attributedTitle = NSAttributedString(string: "Sorting alphabetically by Title ...")
     }
 
     @objc private func sortItemsByTitle(_ sender: UIButton) {
         ItemViewModel.shared.sortProductsByTitle()
+        refreshControl.attributedTitle = NSAttributedString(string: "Sorting alphabetically by Title ...")
         tableDisplay.reloadData()
         self.refreshControl.endRefreshing()
     }

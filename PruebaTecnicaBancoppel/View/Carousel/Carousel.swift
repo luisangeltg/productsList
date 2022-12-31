@@ -98,12 +98,14 @@ extension Carousel: UICollectionViewDataSource {
         imageView.contentMode = .scaleAspectFit
         imageView.sd_setImage(with: urls[indexPath.row], placeholderImage: UIImage(named: "placeholder"))
         cell.contentView.addSubview(imageView)
+        
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: cell.topAnchor),
             imageView.bottomAnchor.constraint(equalTo: cell.bottomAnchor),
             imageView.trailingAnchor.constraint(equalTo: cell.trailingAnchor),
             imageView.leadingAnchor.constraint(equalTo: cell.leadingAnchor)
         ])
+        
         return cell
     }
 }
